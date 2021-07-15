@@ -38,7 +38,30 @@ Vignettes are longform examples and are Rmd files in the `vignettes` folder. Eas
 
 ## Step 4 Customize your **pkgdown** site and build
 
-pkgdown::build_favicon
+1. Structure of the upper navbar. Edit `_pkgdown.yml` in the `pkddown` folder to change the look of the upper navbar. There are endless options. Find examples from other peoples' pkgdown sites.
+2. Update your logo and favicons. Logo is in `man/figures`. After updating run         `pkgdown::build_favicon()` to remake the favicons.
+3. Add material to the `docs` folder as needed. See the example for the References tab in the `_pkgdown.yml`.
+4. Build your site with `pkgdown::build_site()`.
+
+## Step 5 Make your site live on GitHub
+
+1. Push the changes to GitHub.
+2. Click on Settings for the repository.
+3. Scroll way down to the GitHub Pages section.
+4. In the **Source** section, change branch to Main and folder to `docs`. There are other ways to set up GitHub Pages but this will get you started.
+5. I always add my GitHub Pages URL to the repo description (on right when on your main repo page).
+
+## NMFS Branding
+
+This template has the following branding elements.
+
+1. `extra.css` in the `pkgdown` folder sources the **nmfspalette** css. This get you the colors.
+2. The `Readme.Rmd` file sources the NMFS Disclaimer and footer with NMFS logo from the [FIT Resources](https://github.com/nmfs-fish-tools/Resources).
+3. The LICENSE is set to that used by [FIT packages](https://github.com/nmfs-fish-tools).
+
+## Readme File
+
+**pkgdown** uses `Readme.md` but to pull in the Disclaimer and footer from FIT, you need a Rmd file. When you update the `Readme.Rmd` file, **you need to remember to knit the file** to update `Readme.md`. 
 
 <!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
 
