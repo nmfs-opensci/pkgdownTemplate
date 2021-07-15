@@ -1,0 +1,12 @@
+---
+title: "Page"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Page
+
+You can also make a Rmd file and save the output to html. Then you can make a page of links (say) or whatever you need.
