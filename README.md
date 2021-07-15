@@ -4,7 +4,7 @@
 
 ![GitHub release (latest by
 date)](https://img.shields.io/github/v/release/RWorkflow-Workshop-2021/pkgdown-template)
-[![R-CMD-check](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/workflows/R-CMD-check/badge.svg)](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/actions)
+[![R-CMD-check](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/workflows/R-CMD-check/badge.svg)](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/actions/workflows/R-CMD-check.yaml)
 
 This is a template for a NMFS branded GitHub repository, R package, and
 pkgdown website. It will have a NMFS palette, appropriate license and
