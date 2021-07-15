@@ -84,6 +84,11 @@ This template has the following branding elements.
 3.  The LICENSE is set to that used by [FIT
     packages](https://github.com/nmfs-fish-tools).
 
+## GitHub Actions and Badges
+
+In the `.github` folder is just one action, to run R CMD check on the
+package.
+
 ## Readme File
 
 **pkgdown** uses `Readme.md` but to pull in the Disclaimer and footer
