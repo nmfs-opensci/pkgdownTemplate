@@ -1,0 +1,20 @@
+Package: pkgdownTemplate
+Title: pkgdown Template Package
+Date: 2021-07-04
+Version: 1.0
+Authors@R: person("Holmes", "Elizabeth", , "eli.holmes@noaa.gov", role = c("aut", "cre"))
+Maintainer: Elizabeth Holmes <eli.holmes@noaa.gov>
+URL: https://RWorkflow-Workshop-2021.github.io/pkgdown-template, https://github.com/RWorkflow-Workshop-2021/pkgdown-template
+BugReports: https://github.com/RWorkflow-Workshop-2021/pkgdown-template/issues
+Description: This is a template package for a NMFS branded R package with a pkgdown website.
+Depends: R (>= 4.0.0)
+Suggests: 
+    rmarkdown,
+    knitr
+Imports: stats, graphics
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
+VignetteBuilder: knitr

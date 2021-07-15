@@ -1,0 +1,24 @@
+---
+title: "samplevignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{samplevignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup}
+library(pkgdownTemplate)
+```
+
+Here you can show uses worked up examples for your package. The easiest way to make a new package is to use `usethis::use_vignette("nameofvignette")`.
+
+## Let's make a plot!
+
+```{r fig.align="center"}
+require(stats)
+x <- runif(10)
+y <- 10 + 3*x + rnorm(10)
+sampleplot(x, y)
+title(samplefunction("x versus y", y="10 vals", z="green"))
+```
