@@ -62,6 +62,10 @@ This template has the following branding elements.
 2. The `Readme.Rmd` file sources the NMFS Disclaimer and footer with NMFS logo from the [FIT Resources](https://github.com/nmfs-fish-tools/Resources).
 3. The LICENSE is set to that used by [FIT packages](https://github.com/nmfs-fish-tools).
 
+## GitHub Actions and Badges
+
+In the `.github` folder is just one action, to run R CMD check on the package.
+
 ## Readme File
 
 **pkgdown** uses `Readme.md` but to pull in the Disclaimer and footer from FIT, you need a Rmd file. When you update the `Readme.Rmd` file, **you need to remember to knit the file** to update `Readme.md`. 
