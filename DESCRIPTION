@@ -2,8 +2,7 @@ Package: pkgdownTemplate
 Title: pkgdown Template Package
 Date: 2021-07-04
 Version: 1.0
-Authors@R: person("Holmes", "Elizabeth", , "eli.holmes@noaa.gov", role = c("aut", "cre"))
-Maintainer: Elizabeth Holmes <eli.holmes@noaa.gov>
+Authors@R: c(person("Elizabeth", "Holmes", , "eli.holmes@noaa.gov", role = c("aut", "cre")), person("Bai", "Li", role="aut"), person("Christine", "Stawitz", role="aut"))
 URL: https://RWorkflow-Workshop-2021.github.io/pkgdown-template, https://github.com/RWorkflow-Workshop-2021/pkgdown-template
 BugReports: https://github.com/RWorkflow-Workshop-2021/pkgdown-template/issues
 Description: This is a template package for a NMFS branded R package with a pkgdown website.

@@ -57,3 +57,10 @@ news:
   - text: "Version 1.0"
     href: https://github.com/RWorkflow-Workshop-2021/pkgdown-template/releases/tag/v1.0
 
+authors:
+  Elizabeth Holmes:
+    href: https://github.com/eeholmes
+  Bai Li:
+    href: https://github.com/Bai-Li-NOAA
+  Christine Stawitz:
+    href: https://github.com/ChristineStawitz-NOAA
