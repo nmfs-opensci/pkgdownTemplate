@@ -3,5 +3,8 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   samplevignette: samplevignette.html
-last_built: 2021-07-21T22:32Z
+last_built: 2021-07-21T23:27Z
+urls:
+  reference: https://nmfs-fish-tools.github.io/pkgdownTemplate//reference
+  article: https://nmfs-fish-tools.github.io/pkgdownTemplate//articles
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://nmfs-fish-tools.github.io/pkgdownTemplate//index.html</loc>
+  </url>
+  <url>
+    <loc>https://nmfs-fish-tools.github.io/pkgdownTemplate//reference/samplefunction.html</loc>
+  </url>
+  <url>
+    <loc>https://nmfs-fish-tools.github.io/pkgdownTemplate//reference/sampleplot.html</loc>
+  </url>
+  <url>
+    <loc>https://nmfs-fish-tools.github.io/pkgdownTemplate//articles/samplevignette.html</loc>
+  </url>
+</urlset>

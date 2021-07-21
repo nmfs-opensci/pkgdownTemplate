@@ -1,3 +1,5 @@
+url: https://nmfs-fish-tools.github.io/pkgdownTemplate/
+
 navbar:
   structure:
     left:
@@ -23,12 +25,12 @@ navbar:
     sourcecode:
       text: Source Code
       icon: fab fa-github fa-lg
-      href: https://github.com/RWorkflow-Workshop-2021/pkgdown-template
+      href: https://github.com/nmfs-fish-tools/pkgdownTemplate
 
     issue:
       text: Issues
       icon: fas fa-question-circle fa-lg
-      href: https://github.com/RWorkflow-Workshop-2021/pkgdown-template/issues/
+      href: https://github.com/nmfs-fish-tools/pkgdownTemplate/issues/
 
     articles:
       text: Vignettes
@@ -55,7 +57,7 @@ reference:
 news:
   releases:
   - text: "Version 1.0"
-    href: https://github.com/RWorkflow-Workshop-2021/pkgdown-template/releases/tag/v1.0
+    href: https://github.com/nmfs-fish-tools/pkgdownTemplate/releases/tag/v1.0
 
 authors:
   Elizabeth Holmes:
