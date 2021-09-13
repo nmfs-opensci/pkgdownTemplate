@@ -5,8 +5,8 @@
 <!-- badges: start -->
 
 [![GitHub release (latest by
-date)](https://img.shields.io/github/v/release/RWorkflow-Workshop-2021/pkgdown-template)](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/releases)
-[![R-CMD-check](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/workflows/R-CMD-check/badge.svg)](https://github.com/RWorkflow-Workshop-2021/pkgdown-template/actions/workflows/R-CMD-check.yaml)
+date)](https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdown-template)](https://github.com/nmfs-fish-tools/pkgdown-template/releases)
+[![R-CMD-check](https://github.com/nmfs-fish-tools/pkgdown-template/workflows/R-CMD-check/badge.svg)](https://github.com/nmfs-fish-tools/pkgdown-template/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This is a template for a NMFS branded GitHub repository, R package, and
@@ -42,7 +42,7 @@ build and pass check.
 1.  Edit the DESCRIPTION file (change Title, Description, urls for repo,
     Authors)
 2.  Add any required packages to Depends (or Imports\* or Suggests\*).
-3.  Edit the Readme.Rmd file.
+3.  Edit the Readme.Rmd file. Note, make sure to change `nmfs-fish-tools` in the badge section to your repo name.
 4.  Add your functions to the R folder. There are some template
     functions there already.
 5.  Don’t touch the man folder. Roxygen2 will make your Rd files.
