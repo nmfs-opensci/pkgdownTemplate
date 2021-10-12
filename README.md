@@ -6,7 +6,7 @@
 
 [![GitHub release (latest by
 date)](https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate)](https://github.com/nmfs-fish-tools/pkgdownTemplate/releases)
-[![R-CMD-check](https://github.com/nmfs-fish-tools/pkgdown-template/workflows/R-CMD-check/badge.svg)](https://github.com/nmfs-fish-tools/pkgdown-template/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/nmfs-fish-tools/pkgdownTemplate/workflows/R-CMD-check/badge.svg)](https://github.com/nmfs-fish-tools/pkgdownTemplate/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This is a template for a NMFS branded GitHub repository, R package, and
