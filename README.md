@@ -16,6 +16,8 @@ disclaimer, and a NMFS footer with logo.
 The instructions will use the **usethis** and **pkgdown** packages. So
 install those.
 
+If you already have an R package that you just want to add a site for, please use [these instructions](https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/).
+
 ## Step 1 Make sure the package builds
 
 1.  Clone this GitHub repository and then open the new repository (on
