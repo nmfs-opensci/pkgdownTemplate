@@ -1,3 +1,9 @@
+---
+output: 
+  md_document:
+    variant: gfm
+---
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # pkgdown template <img src="man/figures/logo.png" align="right" style="padding: 10px"/>
@@ -9,12 +15,7 @@ date)](https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate)]
 [![R-CMD-check](https://github.com/nmfs-fish-tools/pkgdownTemplate/workflows/R-CMD-check/badge.svg)](https://github.com/nmfs-fish-tools/pkgdownTemplate/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-This is a template for a NMFS branded GitHub repository, R package, and
-pkgdown website. It will have a NMFS palette, appropriate license and
-disclaimer, and a NMFS footer with logo.
-
-The instructions will use the **usethis** and **pkgdown** packages. So
-install those.
+This is a template for a NMFS branded GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo.  It has GitHub Actions that will automatically rebuild the site whenever the files are changed.  The instructions will use the **usethis** and **pkgdown** packages. So install those.
 
 If you already have an R package that you just want to add a site for, please use [these instructions](https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/).
 
@@ -104,28 +105,21 @@ from FIT, which migh change in the future, you need a Rmd file. When you update 
 
 <!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
 
-------------------------------------------------------------------------
+****
 
 ## Disclaimer
 
-The United States Department of Commerce (DOC) GitHub project code is
-provided on an ‘as is’ basis and the user assumes responsibility for its
-use. DOC has relinquished control of the information and no longer has
-responsibility to protect the integrity, confidentiality, or
-availability of the information. Any claims against the Department of
-Commerce stemming from the use of its GitHub project will be governed by
-all applicable Federal law. Any reference to specific commercial
-products, processes, or services by service mark, trademark,
-manufacturer, or otherwise, does not constitute or imply their
-endorsement, recommendation or favoring by the Department of Commerce.
-The Department of Commerce seal and logo, or the seal and logo of a DOC
-bureau, shall not be used in any manner to imply endorsement of any
-commercial product or activity by DOC or the United States Government.”
+The United States Department of Commerce (DOC) GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. 
+DOC has relinquished control of the information and no longer has responsibility to protect the integrity, confidentiality, or availability of the 
+information. Any claims against the Department of Commerce stemming from the use of its GitHub project will be governed by all applicable Federal law. 
+Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or 
+imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a 
+DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.”
 
-------------------------------------------------------------------------
+****
 
-<img src="https://raw.githubusercontent.com/nmfs-general-modeling-tools/nmfspalette/main/man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+<img src="https://raw.githubusercontent.com/nmfs-general-modeling-tools/nmfspalette/main/man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries"> 
 
-[U.S. Department of Commerce](https://www.commerce.gov/) \| [National
-Oceanographic and Atmospheric Administration](https://www.noaa.gov) \|
-[NOAA Fisheries](https://www.fisheries.noaa.gov/)
+[U.S. Department of Commerce](https://www.commerce.gov/) | [National Oceanographic and Atmospheric Administration](https://www.noaa.gov) | [NOAA Fisheries](https://www.fisheries.noaa.gov/)
+
+

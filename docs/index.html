@@ -133,64 +133,77 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
+
+<hr>
+<p>output: md_document: variant: gfm —</p>
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 <div id="pkgdown-template-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#pkgdown-template-" class="anchor"></a>pkgdown template <img src="reference/figures/logo.png" align="right" style="padding: 10px">
 </h1></div>
 <!-- badges: start -->
-
-<p>This is a template for a NMFS branded GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo.</p>
-<p>The instructions will use the <strong>usethis</strong> and <strong>pkgdown</strong> packages. So install those.</p>
+<p><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases"><img src="https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate" alt="GitHub release (latest by date)"></a> <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/nmfs-fish-tools/pkgdownTemplate/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <!-- badges: end --></p>
+<p>This is a template for a NMFS branded GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo. It has GitHub Actions that will automatically rebuild the site whenever the files are changed. The instructions will use the <strong>usethis</strong> and <strong>pkgdown</strong> packages. So install those.</p>
+<p>If you already have an R package that you just want to add a site for, please use <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/">these instructions</a>.</p>
 <div id="step-1-make-sure-the-package-builds" class="section level2">
 <h2 class="hasAnchor">
 <a href="#step-1-make-sure-the-package-builds" class="anchor"></a>Step 1 Make sure the package builds</h2>
 <ol>
-<li>Clone this GitHub repository and then open the new repository (on your computer).</li>
-<li>Set-up your RStudio project to use Roxygen for documentation and NAMESPACE</li>
-</ol>
+<li>
+<span title="To clone a GitHub repository, copy the URL of the repo, then click the + sign in the top right and choose 'Import repository'. Import the repository into your own GitHub account; you probably want to give it the name of your R package. Then clone YOUR copy of pkgdownTemplate onto your computer. Work within that local clone of your pkgdownTemplate copy."><a href="">Clone</a></span> this GitHub repository and then open the new repository (on your computer).</li>
+<li>Set-up your RStudio project to use Roxygen for documentation and NAMESPACE
 <ul>
 <li>Tools &gt; Project Options… &gt; Build Tools Click the checkbox that says “Build documentation with Roxygen”.</li>
 <li>The Configure popup box for Roxygen will probably appear, if not click the Configure button. Check all the checkboxes.</li>
 </ul>
-<ol>
-<li>On the Build tab, click Install and Restart to make sure it builds.</li>
-<li>On the Build tab, click Check to make sure it passes all the checks.</li>
-<li>Type the code <code><a href="https://pkgdown.r-lib.org/reference/build_site.html">pkgdown::build_site()</a></code> and make sure the <strong>pkgdown</strong> building works.</li>
+</li>
+<li>On the Build tab, click Install and Restart to make sure your copy of {pkgdownTemplate} builds.</li>
+<li>On the Build tab, click Check to make sure the package passes all the checks.</li>
+<li>Type the code <code><a href="https://pkgdown.r-lib.org/reference/build_site.html">pkgdown::build_site()</a></code> and make sure the {pkgdown} site builds.</li>
 </ol>
-<p>Note steps 3 and 4 are to make sure your computer is set up to build and check packages. As long as you haven’t editted the package yet, it will build and pass check.</p>
+<p>Note the steps above are to make sure your computer is set up to build and check packages. As long as you haven’t editted the package yet, it will build and pass check.</p>
 </div>
-<div id="step-2-customize-your-package" class="section level2">
+<div id="step-2-customize-your-r-package" class="section level2">
 <h2 class="hasAnchor">
-<a href="#step-2-customize-your-package" class="anchor"></a>Step 2 Customize your package</h2>
+<a href="#step-2-customize-your-r-package" class="anchor"></a>Step 2 Customize your R package</h2>
 <ol>
 <li>Edit the DESCRIPTION file (change Title, Description, urls for repo, Authors)</li>
 <li>Add any required packages to Depends (or Imports* or Suggests*).</li>
-<li>Edit the Readme.Rmd file. Note, make sure to change <code>nmfs-fish-tools</code> in the badge section to your repo name.</li>
-<li>Add your functions to the R folder. There are some template functions there already.</li>
-<li>Don’t touch the man folder. Roxygen2 will make your Rd files.</li>
+<li>Edit the Readme file.
+<ul>
+<li>Does your Readme contain R code? Edit the Readme.Rmd file and <span title="In RStudio, you will see the knit button when you open Readme.Rmd"><a href="">knit</a></span> to create the Readme.md file. You will need to re-knit Readme.Rmd every time you change the Rmd file.</li>
+<li>Do you want to make sure your Readme file uses the most up to date Disclaimer and footer from FIT? Then you will also need to use the Rmd file.</li>
+<li>If your Readme does not include R code and you don’t need to keep your {pkgdown} site synced with the FIT disclaimers, footer and license, then you can delete Readme.Rmd and just use Readme.md. In this case, you do not need to knit Readme.md. {pkgdown} will use the md file directly.</li>
+<li>Note, make sure to change <code>nmfs-fish-tools</code> in the badge section to your repo name to the name of your GitHub account or GitHub organization.</li>
+</ul>
+</li>
+<li>Add your functions to the <code>R</code> folder. There are some template functions there already.</li>
+<li>Don’t touch the Rd files in the <code>man</code> folder. Roxygen2 will make your Rd files.</li>
 </ol>
 </div>
-<div id="step-3-make-some-vignettes-optional" class="section level2">
+<div id="step-3-customize-your-pkgdown-site-and-build" class="section level2">
 <h2 class="hasAnchor">
-<a href="#step-3-make-some-vignettes-optional" class="anchor"></a>Step 3 Make some vignettes (optional)</h2>
-<p>Vignettes are longform examples and are Rmd files in the <code>vignettes</code> folder. Easiest way to start a new vignette is <code><a href="https://usethis.r-lib.org/reference/use_vignette.html">usethis::use_vignette("vignettename")</a></code>.</p>
-</div>
-<div id="step-4-customize-your-pkgdown-site-and-build" class="section level2">
-<h2 class="hasAnchor">
-<a href="#step-4-customize-your-pkgdown-site-and-build" class="anchor"></a>Step 4 Customize your <strong>pkgdown</strong> site and build</h2>
+<a href="#step-3-customize-your-pkgdown-site-and-build" class="anchor"></a>Step 3 Customize your <strong>pkgdown</strong> site and build</h2>
 <ol>
-<li>Structure of the upper navbar. Edit <code>_pkgdown.yml</code> in the <code>pkddown</code> folder to change the look of the upper navbar. There are endless options. Find examples from other peoples’ pkgdown sites.</li>
-<li>Update your logo and favicons. Logo is in <code>man/figures</code>. After updating run <code><a href="https://pkgdown.r-lib.org/reference/build_favicons.html">pkgdown::build_favicon()</a></code> to remake the favicons.</li>
-<li>Add material to the <code>docs</code> folder as needed. See the example for the References tab in the <code>_pkgdown.yml</code>.</li>
-<li>Build your site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html">pkgdown::build_site()</a></code>.</li>
+<li>
+<em>Structure of the upper navbar</em> Edit <code>_pkgdown.yml</code> in the <code>pkddown</code> folder to change the look of the upper navbar. There are endless options. Find examples from other peoples’ {pkgdown} sites. Make sure to change all the URLs in the <code>_pkdown.yml</code> file.</li>
+<li>Update your logo. The logo is in <code>man/figures/logo.png</code>. If you change the name of the logo file, then change the where the logo file is referenced in the Readme file (line 3).</li>
+<li>After updating your logo, run <code><a href="https://pkgdown.r-lib.org/reference/build_favicons.html">pkgdown::build_favicon()</a></code> to remake the favicons.</li>
+<li>Add material to the <code>docs</code> folder as needed. See the example for the References tab in the <code>_pkgdown.yml</code>. This won’t be needed for all R packages. It depends what reference material you are including.</li>
+<li>Build your {pkgdown} site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html">pkgdown::build_site()</a></code>.</li>
 </ol>
+</div>
+<div id="step-4-make-some-vignettes-optional" class="section level2">
+<h2 class="hasAnchor">
+<a href="#step-4-make-some-vignettes-optional" class="anchor"></a>Step 4 Make some vignettes (optional)</h2>
+<p>Vignettes are longform examples and are Rmd files in the <code>vignettes</code> folder. Easiest way to start a new vignette is <code>usethis::use_vignette("vignettename")</code>.</p>
 </div>
 <div id="step-5-make-your-site-live-on-github" class="section level2">
 <h2 class="hasAnchor">
 <a href="#step-5-make-your-site-live-on-github" class="anchor"></a>Step 5 Make your site live on GitHub</h2>
 <ol>
-<li>Push the changes to GitHub.</li>
-<li>Click on Settings for the repository.</li>
+<li>Push the local changes to your R package (the pkgdownTemplate you copied) to GitHub.</li>
+<li>Click on Settings for your repository.</li>
 <li>Scroll way down to the GitHub Pages section.</li>
 <li>In the <strong>Source</strong> section, change branch to Main and folder to <code>docs</code>. There are other ways to set up GitHub Pages but this will get you started.</li>
 <li>I always add my GitHub Pages URL to the repo description (on right when on your main repo page).</li>
@@ -199,11 +212,11 @@
 <div id="nmfs-branding" class="section level2">
 <h2 class="hasAnchor">
 <a href="#nmfs-branding" class="anchor"></a>NMFS Branding</h2>
-<p>This template has the following branding elements.</p>
+<p>{pkgdownTemplate} has the following branding elements.</p>
 <ol>
 <li>
 <code>extra.css</code> in the <code>pkgdown</code> folder sources the <strong>nmfspalette</strong> css. This get you the colors.</li>
-<li>The <code>Readme.Rmd</code> file sources the NMFS Disclaimer and footer with NMFS logo from the <a href="https://github.com/nmfs-fish-tools/Resources">FIT Resources</a>.</li>
+<li>The <code>Readme.md</code> file sources the NMFS Disclaimer and footer with NMFS logo from the <a href="https://github.com/nmfs-fish-tools/Resources">FIT Resources</a>.</li>
 <li>The LICENSE is set to that used by <a href="https://github.com/nmfs-fish-tools">FIT packages</a>.</li>
 </ol>
 </div>
@@ -215,7 +228,7 @@
 <div id="readme-file" class="section level2">
 <h2 class="hasAnchor">
 <a href="#readme-file" class="anchor"></a>Readme File</h2>
-<p><strong>pkgdown</strong> uses <code>Readme.md</code> but to pull in the Disclaimer and footer from FIT, you need a Rmd file. When you update the <code>Readme.Rmd</code> file, <strong>you need to remember to knit the file</strong> to update <code>Readme.md</code>.</p>
+<p><strong>pkgdown</strong> uses <code>Readme.md</code> but to pull in the Disclaimer and footer from FIT, which migh change in the future, you need a Rmd file. When you update the <code>Readme.Rmd</code> file, <strong>you need to remember to knit the file</strong> to update <code>Readme.md</code>. You could make a GitHub Action to do this.</p>
 <!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
 <hr>
 </div>
@@ -228,6 +241,7 @@
 <p><a href="https://www.commerce.gov/">U.S. Department of Commerce</a> | <a href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a> | <a href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a></p>
 </div>
 </div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -260,14 +274,7 @@
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases"><img src="https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate" alt="GitHub release (latest by date)"></a></li>
-<li><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/nmfs-fish-tools/pkgdownTemplate/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-</ul>
-</div>
-</div>
+  </div>
 </div>
 
 
