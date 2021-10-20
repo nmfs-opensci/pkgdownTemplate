@@ -24,52 +24,54 @@ If you already have an R package that you just want to add a site for, please us
     your computer).
 2.  Set-up your RStudio project to use Roxygen for documentation and
     NAMESPACE
-
--   Tools &gt; Project Options… &gt; Build Tools Click the checkbox that
+     -   Tools &gt; Project Options… &gt; Build Tools Click the checkbox that
     says “Build documentation with Roxygen”.
--   The Configure popup box for Roxygen will probably appear, if not
+     -   The Configure popup box for Roxygen will probably appear, if not
     click the Configure button. Check all the checkboxes.
+1.  On the Build tab, click Install and Restart to make sure your copy of {pkgdownTemplate} builds.
+2.  On the Build tab, click Check to make sure the package passes all the checks.
+3.  Type the code `pkgdown::build_site()` and make sure the {pkgdown} site builds.
 
-1.  On the Build tab, click Install and Restart to make sure it builds.
-2.  On the Build tab, click Check to make sure it passes all the checks.
-3.  Type the code `pkgdown::build_site()` and make sure the **pkgdown**
-    building works.
-
-Note steps 3 and 4 are to make sure your computer is set up to build and
+Note the steps above are to make sure your computer is set up to build and
 check packages. As long as you haven’t editted the package yet, it will
 build and pass check.
 
-## Step 2 Customize your package
+## Step 2 Customize your R package
 
 1.  Edit the DESCRIPTION file (change Title, Description, urls for repo,
     Authors)
 2.  Add any required packages to Depends (or Imports\* or Suggests\*).
-3.  Edit the Readme.Rmd file. Note, make sure to change `nmfs-fish-tools` in the badge section to your repo name.
-4.  Add your functions to the R folder. There are some template
+3.  Edit the Readme file.
+    - Does your Readme contain R code? Edit the Readme.Rmd file and <span title="In RStudio, you will see the knit button when you open Readme.Rmd"><a href="">knit</a></span> to create the Readme.md file. You will need to re-knit Readme.Rmd every time you change the Rmd file.
+    - Do you want to make sure your Readme file uses the most up to date Disclaimer and footer from FIT? Then you will also need to use the Rmd file.
+    - If your Readme does not include R code and you don't need to keep your {pkgdown} site synced with the FIT disclaimers, footer and license, then you can delete Readme.Rmd and just use Readme.md. In this case, you do not need to knit Readme.md. {pkgdown} will use the md file directly.
+    -  Note, make sure to change `nmfs-fish-tools` in the badge section to your repo name to the name of your GitHub account or GitHub organization.
+6.  Add your functions to the `R` folder. There are some template
     functions there already.
-5.  Don’t touch the man folder. Roxygen2 will make your Rd files.
+5.  Don’t touch the Rd files in the `man` folder. Roxygen2 will make your Rd files.
 
-## Step 3 Make some vignettes (optional)
+## Step 3 Customize your **pkgdown** site and build
+
+1.  *Structure of the upper navbar* Edit `_pkgdown.yml` in the `pkddown`
+    folder to change the look of the upper navbar. There are endless
+    options. Find examples from other peoples’ {pkgdown} sites. Make sure to change
+    all the URLs in the `_pkdown.yml` file.
+2.  Update your logo. The logo is in `man/figures/logo.png`. If you change the name of the logo file, then change the where the logo file is referenced in the Readme file (line 3). 
+3.  After updating your logo, run `pkgdown::build_favicon()` to remake the favicons.
+4.  Add material to the `docs` folder as needed. See the example for the
+    References tab in the `_pkgdown.yml`. This won't be needed for all R packages. It depends what reference material you are including.
+5.  Build your {pkgdown} site with `pkgdown::build_site()`.
+
+## Step 4 Make some vignettes (optional)
 
 Vignettes are longform examples and are Rmd files in the `vignettes`
 folder. Easiest way to start a new vignette is
 `usethis::use_vignette("vignettename")`.
 
-## Step 4 Customize your **pkgdown** site and build
-
-1.  Structure of the upper navbar. Edit `_pkgdown.yml` in the `pkddown`
-    folder to change the look of the upper navbar. There are endless
-    options. Find examples from other peoples’ pkgdown sites.
-2.  Update your logo and favicons. Logo is in `man/figures`. After
-    updating run `pkgdown::build_favicon()` to remake the favicons.
-3.  Add material to the `docs` folder as needed. See the example for the
-    References tab in the `_pkgdown.yml`.
-4.  Build your site with `pkgdown::build_site()`.
-
 ## Step 5 Make your site live on GitHub
 
-1.  Push the changes to GitHub.
-2.  Click on Settings for the repository.
+1.  Push the local changes to your R package (the pkgdownTemplate you copied) to GitHub.
+2.  Click on Settings for your repository.
 3.  Scroll way down to the GitHub Pages section.
 4.  In the **Source** section, change branch to Main and folder to
     `docs`. There are other ways to set up GitHub Pages but this will
@@ -79,11 +81,11 @@ folder. Easiest way to start a new vignette is
 
 ## NMFS Branding
 
-This template has the following branding elements.
+{pkgdownTemplate} has the following branding elements.
 
 1.  `extra.css` in the `pkgdown` folder sources the **nmfspalette** css.
     This get you the colors.
-2.  The `Readme.Rmd` file sources the NMFS Disclaimer and footer with
+2.  The `Readme.md` file sources the NMFS Disclaimer and footer with
     NMFS logo from the [FIT
     Resources](https://github.com/nmfs-fish-tools/Resources).
 3.  The LICENSE is set to that used by [FIT
@@ -97,8 +99,8 @@ package.
 ## Readme File
 
 **pkgdown** uses `Readme.md` but to pull in the Disclaimer and footer
-from FIT, you need a Rmd file. When you update the `Readme.Rmd` file,
-**you need to remember to knit the file** to update `Readme.md`.
+from FIT, which migh change in the future, you need a Rmd file. When you update the `Readme.Rmd` file,
+**you need to remember to knit the file** to update `Readme.md`. You could make a GitHub Action to do this.
 
 <!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
 
