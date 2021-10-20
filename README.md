@@ -20,7 +20,7 @@ If you already have an R package that you just want to add a site for, please us
 
 ## Step 1 Make sure the package builds
 
-1.  <span title="test">Clone</span> this GitHub repository and then open the new repository (on
+1.  <span title="test"><a href="">Clone</a></span> this GitHub repository and then open the new repository (on
     your computer).
 2.  Set-up your RStudio project to use Roxygen for documentation and
     NAMESPACE
