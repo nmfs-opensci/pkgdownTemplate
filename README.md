@@ -20,7 +20,7 @@ If you already have an R package that you just want to add a site for, please us
 
 ## Step 1 Make sure the package builds
 
-1.  <span title="test"><a href="">Clone</a></span> this GitHub repository and then open the new repository (on
+1.  <span title="To clone a GitHub repository, copy the URL of the repo, then click the + sign in the top right and choose 'Import repository'. Import the repository into your own GitHub account; you probably want to give it the name of your R package. Then clone YOUR copy of pkgdownTemplate onto your computer. Work within that local clone of your pkgdownTemplate copy."><a href="">Clone</a></span> this GitHub repository and then open the new repository (on
     your computer).
 2.  Set-up your RStudio project to use Roxygen for documentation and
     NAMESPACE
