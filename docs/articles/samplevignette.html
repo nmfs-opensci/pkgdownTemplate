@@ -27,6 +27,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -39,7 +41,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">pkgdownTemplate</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0</span>
       </span>
     </div>
 
@@ -59,14 +61,14 @@
   </a>
 </li>
 <li>
-  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate">
+  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
     Source Code
   </a>
 </li>
 <li>
-  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/issues/">
+  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/issues/" class="external-link">
     <span class="fas fa-question-circle fa-lg"></span>
      
     Issues
@@ -105,10 +107,11 @@
   <ul class="dropdown-menu" role="menu">
 <li class="dropdown-header">Releases</li>
     <li>
-      <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases/tag/v1.0">Version 1.0</a>
+      <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases/tag/v1.0" class="external-link">Version 1.0</a>
     </li>
     <li class="divider">
-    <li>
+    </li>
+<li>
       <a href="../news/index.html">Changelog</a>
     </li>
   </ul>
@@ -116,7 +119,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/">
+  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -137,7 +140,7 @@
       <h1 data-toc-skip>samplevignette</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/blob/master/vignettes/samplevignette.Rmd"><code>vignettes/samplevignette.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/blob/HEAD/vignettes/samplevignette.Rmd" class="external-link"><code>vignettes/samplevignette.Rmd</code></a></small>
       <div class="hidden name"><code>samplevignette.Rmd</code></div>
 
     </div>
@@ -145,20 +148,20 @@
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://nmfs-fish-tools.github.io/pkgdownTemplate">pkgdownTemplate</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://nmfs-fish-tools.github.io/pkgdownTemplate">pkgdownTemplate</a></span><span class="op">)</span></code></pre></div>
 <p>Here you can show uses worked up examples for your package. The easiest way to make a new package is to use <code>usethis::use_vignette("nameofvignette")</code>.</p>
-<div id="lets-make-a-plot" class="section level2">
-<h2 class="hasAnchor">
-<a href="#lets-make-a-plot" class="anchor"></a>Let’s make a plot!</h2>
+<div class="section level2">
+<h2 id="lets-make-a-plot">Let’s make a plot!<a class="anchor" aria-label="anchor" href="#lets-make-a-plot"></a>
+</h2>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va">stats</span><span class="op">)</span>
-<span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
-<span class="va">y</span> <span class="op">&lt;-</span> <span class="fl">10</span> <span class="op">+</span> <span class="fl">3</span><span class="op">*</span><span class="va">x</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va">stats</span><span class="op">)</span>
+<span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html" class="external-link">runif</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
+<span class="va">y</span> <span class="op">&lt;-</span> <span class="fl">10</span> <span class="op">+</span> <span class="fl">3</span><span class="op">*</span><span class="va">x</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
 <span class="fu"><a href="../reference/sampleplot.html">sampleplot</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span></code></pre></div>
-<pre><code>## (Intercept)           x 
-##   10.947048    1.378132</code></pre>
+<pre><code><span class="co">## (Intercept)           x </span>
+<span class="co">##    9.818772    3.292302</span></code></pre>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/title.html">title</a></span><span class="op">(</span><span class="fu"><a href="../reference/samplefunction.html">samplefunction</a></span><span class="op">(</span><span class="st">"x versus y"</span>, y<span class="op">=</span><span class="st">"10 vals"</span>, z<span class="op">=</span><span class="st">"green"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/title.html" class="external-link">title</a></span><span class="op">(</span><span class="fu"><a href="../reference/samplefunction.html">samplefunction</a></span><span class="op">(</span><span class="st">"x versus y"</span>, y<span class="op">=</span><span class="st">"10 vals"</span>, z<span class="op">=</span><span class="st">"green"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="samplevignette_files/figure-html/unnamed-chunk-1-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
   </div>
@@ -174,11 +177,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by <a href="https://github.com/eeholmes">Elizabeth Holmes</a>, <a href="https://github.com/Bai-Li-NOAA">Bai Li</a>, <a href="https://github.com/ChristineStawitz-NOAA">Christine Stawitz</a>.</p>
+  <p></p>
+<p>Developed by <a href="https://github.com/eeholmes" class="external-link">Elizabeth Holmes</a>, <a href="https://github.com/Bai-Li-NOAA" class="external-link">Bai Li</a>, <a href="https://github.com/ChristineStawitz-NOAA" class="external-link">Christine Stawitz</a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -186,6 +191,8 @@
 
   
 
+
+  
 
   </body>
 </html>

@@ -27,6 +27,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -39,7 +41,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">pkgdownTemplate</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0</span>
       </span>
     </div>
 
@@ -59,14 +61,14 @@
   </a>
 </li>
 <li>
-  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate">
+  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
     Source Code
   </a>
 </li>
 <li>
-  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/issues/">
+  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/issues/" class="external-link">
     <span class="fas fa-question-circle fa-lg"></span>
      
     Issues
@@ -105,10 +107,11 @@
   <ul class="dropdown-menu" role="menu">
 <li class="dropdown-header">Releases</li>
     <li>
-      <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases/tag/v1.0">Version 1.0</a>
+      <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases/tag/v1.0" class="external-link">Version 1.0</a>
     </li>
     <li class="divider">
-    <li>
+    </li>
+<li>
       <a href="news/index.html">Changelog</a>
     </li>
   </ul>
@@ -116,7 +119,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/">
+  <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -133,22 +136,17 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-
-<hr>
-<p>output: md_document: variant: gfm —</p>
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-<div id="pkgdown-template-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#pkgdown-template-" class="anchor"></a>pkgdown template <img src="reference/figures/logo.png" align="right" style="padding: 10px">
+<div class="section level1">
+<div class="page-header"><h1 id="pkgdown-template-">pkgdown template <img src="reference/figures/logo.png" align="right" style="padding: 10px"><a class="anchor" aria-label="anchor" href="#pkgdown-template-"></a>
 </h1></div>
 <!-- badges: start -->
-<p><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases"><img src="https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate" alt="GitHub release (latest by date)"></a> <a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/nmfs-fish-tools/pkgdownTemplate/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <!-- badges: end --></p>
+
 <p>This is a template for a NMFS branded GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo. It has GitHub Actions that will automatically rebuild the site whenever the files are changed. The instructions will use the <strong>usethis</strong> and <strong>pkgdown</strong> packages. So install those.</p>
-<p>If you already have an R package that you just want to add a site for, please use <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/">these instructions</a>.</p>
-<div id="step-1-make-sure-the-package-builds" class="section level2">
-<h2 class="hasAnchor">
-<a href="#step-1-make-sure-the-package-builds" class="anchor"></a>Step 1 Make sure the package builds</h2>
-<ol>
+<p>If you already have an R package that you just want to add a site for, please use <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/" class="external-link">these instructions</a>.</p>
+<div class="section level2">
+<h2 id="step-1-make-sure-the-package-builds">Step 1 Make sure the package builds<a class="anchor" aria-label="anchor" href="#step-1-make-sure-the-package-builds"></a>
+</h2>
+<ol style="list-style-type: decimal">
 <li>
 <span title="To clone a GitHub repository, copy the URL of the repo, then click the + sign in the top right and choose 'Import repository'. Import the repository into your own GitHub account; you probably want to give it the name of your R package. Then clone YOUR copy of pkgdownTemplate onto your computer. Work within that local clone of your pkgdownTemplate copy."><a href="">Clone</a></span> this GitHub repository and then open the new repository (on your computer).</li>
 <li>Set-up your RStudio project to use Roxygen for documentation and NAMESPACE
@@ -159,14 +157,14 @@
 </li>
 <li>On the Build tab, click Install and Restart to make sure your copy of {pkgdownTemplate} builds.</li>
 <li>On the Build tab, click Check to make sure the package passes all the checks.</li>
-<li>Type the code <code><a href="https://pkgdown.r-lib.org/reference/build_site.html">pkgdown::build_site()</a></code> and make sure the {pkgdown} site builds.</li>
+<li>Type the code <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code> and make sure the {pkgdown} site builds.</li>
 </ol>
 <p>Note the steps above are to make sure your computer is set up to build and check packages. As long as you haven’t editted the package yet, it will build and pass check.</p>
 </div>
-<div id="step-2-customize-your-r-package" class="section level2">
-<h2 class="hasAnchor">
-<a href="#step-2-customize-your-r-package" class="anchor"></a>Step 2 Customize your R package</h2>
-<ol>
+<div class="section level2">
+<h2 id="step-2-customize-your-r-package">Step 2 Customize your R package<a class="anchor" aria-label="anchor" href="#step-2-customize-your-r-package"></a>
+</h2>
+<ol style="list-style-type: decimal">
 <li>Edit the DESCRIPTION file (change Title, Description, urls for repo, Authors)</li>
 <li>Add any required packages to Depends (or Imports* or Suggests*).</li>
 <li>Edit the Readme file.
@@ -181,27 +179,27 @@
 <li>Don’t touch the Rd files in the <code>man</code> folder. Roxygen2 will make your Rd files.</li>
 </ol>
 </div>
-<div id="step-3-customize-your-pkgdown-site-and-build" class="section level2">
-<h2 class="hasAnchor">
-<a href="#step-3-customize-your-pkgdown-site-and-build" class="anchor"></a>Step 3 Customize your <strong>pkgdown</strong> site and build</h2>
-<ol>
+<div class="section level2">
+<h2 id="step-3-customize-your-pkgdown-site-and-build">Step 3 Customize your <strong>pkgdown</strong> site and build<a class="anchor" aria-label="anchor" href="#step-3-customize-your-pkgdown-site-and-build"></a>
+</h2>
+<ol style="list-style-type: decimal">
 <li>
 <em>Structure of the upper navbar</em> Edit <code>_pkgdown.yml</code> in the <code>pkddown</code> folder to change the look of the upper navbar. There are endless options. Find examples from other peoples’ {pkgdown} sites. Make sure to change all the URLs in the <code>_pkdown.yml</code> file.</li>
 <li>Update your logo. The logo is in <code>man/figures/logo.png</code>. If you change the name of the logo file, then change the where the logo file is referenced in the Readme file (line 3).</li>
-<li>After updating your logo, run <code><a href="https://pkgdown.r-lib.org/reference/build_favicons.html">pkgdown::build_favicon()</a></code> to remake the favicons.</li>
+<li>After updating your logo, run <code><a href="https://pkgdown.r-lib.org/reference/build_favicons.html" class="external-link">pkgdown::build_favicon()</a></code> to remake the favicons.</li>
 <li>Add material to the <code>docs</code> folder as needed. See the example for the References tab in the <code>_pkgdown.yml</code>. This won’t be needed for all R packages. It depends what reference material you are including.</li>
-<li>Build your {pkgdown} site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html">pkgdown::build_site()</a></code>.</li>
+<li>Build your {pkgdown} site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code>.</li>
 </ol>
 </div>
-<div id="step-4-make-some-vignettes-optional" class="section level2">
-<h2 class="hasAnchor">
-<a href="#step-4-make-some-vignettes-optional" class="anchor"></a>Step 4 Make some vignettes (optional)</h2>
+<div class="section level2">
+<h2 id="step-4-make-some-vignettes-optional">Step 4 Make some vignettes (optional)<a class="anchor" aria-label="anchor" href="#step-4-make-some-vignettes-optional"></a>
+</h2>
 <p>Vignettes are longform examples and are Rmd files in the <code>vignettes</code> folder. Easiest way to start a new vignette is <code>usethis::use_vignette("vignettename")</code>.</p>
 </div>
-<div id="step-5-make-your-site-live-on-github" class="section level2">
-<h2 class="hasAnchor">
-<a href="#step-5-make-your-site-live-on-github" class="anchor"></a>Step 5 Make your site live on GitHub</h2>
-<ol>
+<div class="section level2">
+<h2 id="step-5-make-your-site-live-on-github">Step 5 Make your site live on GitHub<a class="anchor" aria-label="anchor" href="#step-5-make-your-site-live-on-github"></a>
+</h2>
+<ol style="list-style-type: decimal">
 <li>Push the local changes to your R package (the pkgdownTemplate you copied) to GitHub.</li>
 <li>Click on Settings for your repository.</li>
 <li>Scroll way down to the GitHub Pages section.</li>
@@ -209,68 +207,83 @@
 <li>I always add my GitHub Pages URL to the repo description (on right when on your main repo page).</li>
 </ol>
 </div>
-<div id="nmfs-branding" class="section level2">
-<h2 class="hasAnchor">
-<a href="#nmfs-branding" class="anchor"></a>NMFS Branding</h2>
+<div class="section level2">
+<h2 id="nmfs-branding">NMFS Branding<a class="anchor" aria-label="anchor" href="#nmfs-branding"></a>
+</h2>
 <p>{pkgdownTemplate} has the following branding elements.</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li>
 <code>extra.css</code> in the <code>pkgdown</code> folder sources the <strong>nmfspalette</strong> css. This get you the colors.</li>
-<li>The <code>Readme.md</code> file sources the NMFS Disclaimer and footer with NMFS logo from the <a href="https://github.com/nmfs-fish-tools/Resources">FIT Resources</a>.</li>
-<li>The LICENSE is set to that used by <a href="https://github.com/nmfs-fish-tools">FIT packages</a>.</li>
+<li>The <code>Readme.md</code> file sources the NMFS Disclaimer and footer with NMFS logo from the <a href="https://github.com/nmfs-fish-tools/Resources" class="external-link">FIT Resources</a>.</li>
+<li>The LICENSE is set to that used by <a href="https://github.com/nmfs-fish-tools" class="external-link">FIT packages</a>.</li>
 </ol>
 </div>
-<div id="github-actions-and-badges" class="section level2">
-<h2 class="hasAnchor">
-<a href="#github-actions-and-badges" class="anchor"></a>GitHub Actions and Badges</h2>
+<div class="section level2">
+<h2 id="github-actions-and-badges">GitHub Actions and Badges<a class="anchor" aria-label="anchor" href="#github-actions-and-badges"></a>
+</h2>
 <p>In the <code>.github</code> folder is just one action, to run R CMD check on the package.</p>
 </div>
-<div id="readme-file" class="section level2">
-<h2 class="hasAnchor">
-<a href="#readme-file" class="anchor"></a>Readme File</h2>
+<div class="section level2">
+<h2 id="readme-file">Readme File<a class="anchor" aria-label="anchor" href="#readme-file"></a>
+</h2>
 <p><strong>pkgdown</strong> uses <code>Readme.md</code> but to pull in the Disclaimer and footer from FIT, which migh change in the future, you need a Rmd file. When you update the <code>Readme.Rmd</code> file, <strong>you need to remember to knit the file</strong> to update <code>Readme.md</code>. You could make a GitHub Action to do this.</p>
 <!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
 <hr>
 </div>
-<div id="disclaimer" class="section level2">
-<h2 class="hasAnchor">
-<a href="#disclaimer" class="anchor"></a>Disclaimer</h2>
+<div class="section level2">
+<h2 id="disclaimer">Disclaimer<a class="anchor" aria-label="anchor" href="#disclaimer"></a>
+</h2>
 <p>The United States Department of Commerce (DOC) GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. DOC has relinquished control of the information and no longer has responsibility to protect the integrity, confidentiality, or availability of the information. Any claims against the Department of Commerce stemming from the use of its GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.”</p>
 <hr>
-<p><img src="https://raw.githubusercontent.com/nmfs-general-modeling-tools/nmfspalette/main/man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries"></p>
-<p><a href="https://www.commerce.gov/">U.S. Department of Commerce</a> | <a href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a> | <a href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a></p>
+<p><img src="https://raw.githubusercontent.com/nmfs-general-modeling-tools/nmfspalette/main/reference/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries"></p>
+<p><a href="https://www.commerce.gov/" class="external-link">U.S. Department of Commerce</a> | <a href="https://www.noaa.gov" class="external-link">National Oceanographic and Atmospheric Administration</a> | <a href="https://www.fisheries.noaa.gov/" class="external-link">NOAA Fisheries</a></p>
 </div>
 </div>
-
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/">https://​github.com/​nmfs-fish-tools/​pkgdownTemplate/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/issues">https://​github.com/​nmfs-fish-tools/​pkgdownTemplate/​issues</a>
-</li>
+<li><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> + file <a href="LICENSE-text.html">LICENSE</a>
+<a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a> + file <a href="LICENSE-text.html">LICENSE</a>
 </li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing pkgdownTemplate</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://github.com/eeholmes">Elizabeth Holmes</a> <br><small class="roles"> Author, maintainer </small>  </li>
+<a href="https://github.com/eeholmes" class="external-link">Elizabeth Holmes</a> <br><small class="roles"> Author, maintainer </small>  </li>
 <li>
-<a href="https://github.com/Bai-Li-NOAA">Bai Li</a> <br><small class="roles"> Author </small>  </li>
+<a href="https://github.com/Bai-Li-NOAA" class="external-link">Bai Li</a> <br><small class="roles"> Author </small>  </li>
 <li>
-<a href="https://github.com/ChristineStawitz-NOAA">Christine Stawitz</a> <br><small class="roles"> Author </small>  </li>
+<a href="https://github.com/ChristineStawitz-NOAA" class="external-link">Christine Stawitz</a> <br><small class="roles"> Author </small>  </li>
+</ul>
+</div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/releases" class="external-link"><img src="https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate" alt="GitHub release (latest by date)"></a></li>
+<li><a href="https://github.com/nmfs-fish-tools/pkgdownTemplate/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/nmfs-fish-tools/pkgdownTemplate/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 
@@ -279,11 +292,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by <a href="https://github.com/eeholmes">Elizabeth Holmes</a>, <a href="https://github.com/Bai-Li-NOAA">Bai Li</a>, <a href="https://github.com/ChristineStawitz-NOAA">Christine Stawitz</a>.</p>
+  <p></p>
+<p>Developed by <a href="https://github.com/eeholmes" class="external-link">Elizabeth Holmes</a>, <a href="https://github.com/Bai-Li-NOAA" class="external-link">Bai Li</a>, <a href="https://github.com/ChristineStawitz-NOAA" class="external-link">Christine Stawitz</a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -291,6 +306,8 @@
 
   
 
+
+  
 
   </body>
 </html>
