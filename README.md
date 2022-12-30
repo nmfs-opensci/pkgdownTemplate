@@ -17,7 +17,7 @@ date)](https://img.shields.io/github/v/release/nmfs-fish-tools/pkgdownTemplate)]
 
 This is a template for a NMFS branded GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo.  It has GitHub Actions that will automatically rebuild the site whenever the files are changed.  The instructions will use the **usethis** and **pkgdown** packages. So install those.
 
-If you already have an R package that you just want to add a site for, please use [these instructions](https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/).
+If you already have an R package that you just want to add a site for, please use [these instructions](https://noaa-fisheries-integrated-toolbox.github.io/resources/noaa%20resources/NOAA-pkgdown/).
 
 ## Step 1 Make sure the package builds
 
