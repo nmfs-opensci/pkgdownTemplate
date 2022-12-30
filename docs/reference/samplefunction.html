@@ -57,7 +57,7 @@
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fas fa-book fa-lg"></span>
      
     References
@@ -72,7 +72,7 @@
     </li>
   </ul></li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     News
      
     <span class="caret"></span>
@@ -111,27 +111,34 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">samplefunction</span><span class="op">(</span><span class="va">x</span>, y <span class="op">=</span> <span class="fl">10</span>, z <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"yellow"</span>, <span class="st">"red"</span>, <span class="st">"green"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">samplefunction</span><span class="op">(</span><span class="va">x</span>, y <span class="op">=</span> <span class="fl">10</span>, z <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"yellow"</span>, <span class="st">"red"</span>, <span class="st">"green"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>This is a required argument and has no default value.</p></dd>
+
+
 <dt>y</dt>
 <dd><p>Has a default value of 10.</p></dd>
+
+
 <dt>z</dt>
 <dd><p>Although this looks like it is a default string, the function <code><a href="https://rdrr.io/r/base/match.arg.html" class="external-link">match.arg()</a></code> is
 used to set it in the function. With <code><a href="https://rdrr.io/r/base/match.arg.html" class="external-link">match.arg()</a></code>, the string specifies what values are allowed and it will throw an error if not one of those. The default is the first value.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A string with the values.</p>
+    
+
+<p>A string with the values.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">samplefunction</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">samplefunction</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "1 10 yellow"</span>
 </code></pre></div>
     </div>
@@ -147,7 +154,7 @@ used to set it in the function. With <code><a href="https://rdrr.io/r/base/match
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

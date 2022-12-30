@@ -82,7 +82,7 @@
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fas fa-book fa-lg"></span>
      
     References
@@ -99,7 +99,7 @@
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     News
      
     <span class="caret"></span>
@@ -140,7 +140,6 @@
 <div class="page-header"><h1 id="pkgdown-template-">pkgdown template <img src="reference/figures/logo.png" align="right" style="padding: 10px"><a class="anchor" aria-label="anchor" href="#pkgdown-template-"></a>
 </h1></div>
 <!-- badges: start -->
-
 <p>This is a template for a NMFS branded GitHub repository, R package, and pkgdown website. It will have a NMFS palette, appropriate license and disclaimer, and a NMFS footer with logo. It has GitHub Actions that will automatically rebuild the site whenever the files are changed. The instructions will use the <strong>usethis</strong> and <strong>pkgdown</strong> packages. So install those.</p>
 <p>If you already have an R package that you just want to add a site for, please use <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/workshops/NOAA-pkgdown/" class="external-link">these instructions</a>.</p>
 <div class="section level2">
@@ -149,8 +148,7 @@
 <ol style="list-style-type: decimal">
 <li>
 <span title="To clone a GitHub repository, copy the URL of the repo, then click the + sign in the top right and choose 'Import repository'. Import the repository into your own GitHub account; you probably want to give it the name of your R package. Then clone YOUR copy of pkgdownTemplate onto your computer. Work within that local clone of your pkgdownTemplate copy."><a href="">Clone</a></span> this GitHub repository and then open the new repository (on your computer).</li>
-<li>Set-up your RStudio project to use Roxygen for documentation and NAMESPACE
-<ul>
+<li>Set-up your RStudio project to use Roxygen for documentation and NAMESPACE<ul>
 <li>Tools &gt; Project Options… &gt; Build Tools Click the checkbox that says “Build documentation with Roxygen”.</li>
 <li>The Configure popup box for Roxygen will probably appear, if not click the Configure button. Check all the checkboxes.</li>
 </ul>
@@ -167,8 +165,7 @@
 <ol style="list-style-type: decimal">
 <li>Edit the DESCRIPTION file (change Title, Description, urls for repo, Authors)</li>
 <li>Add any required packages to Depends (or Imports* or Suggests*).</li>
-<li>Edit the Readme file.
-<ul>
+<li>Edit the Readme file.<ul>
 <li>Does your Readme contain R code? Edit the Readme.Rmd file and <span title="In RStudio, you will see the knit button when you open Readme.Rmd"><a href="">knit</a></span> to create the Readme.md file. You will need to re-knit Readme.Rmd every time you change the Rmd file.</li>
 <li>Do you want to make sure your Readme file uses the most up to date Disclaimer and footer from FIT? Then you will also need to use the Rmd file.</li>
 <li>If your Readme does not include R code and you don’t need to keep your {pkgdown} site synced with the FIT disclaimers, footer and license, then you can delete Readme.Rmd and just use Readme.md. In this case, you do not need to knit Readme.md. {pkgdown} will use the md file directly.</li>
@@ -227,15 +224,14 @@
 <h2 id="readme-file">Readme File<a class="anchor" aria-label="anchor" href="#readme-file"></a>
 </h2>
 <p><strong>pkgdown</strong> uses <code>Readme.md</code> but to pull in the Disclaimer and footer from FIT, which migh change in the future, you need a Rmd file. When you update the <code>Readme.Rmd</code> file, <strong>you need to remember to knit the file</strong> to update <code>Readme.md</code>. You could make a GitHub Action to do this.</p>
-<!-- Do not edit below. This adds the Disclaimer and NMFS footer. -->
-<hr>
+<!-- Do not edit below. This adds the Disclaimer and NMFS footer. --><hr>
 </div>
 <div class="section level2">
 <h2 id="disclaimer">Disclaimer<a class="anchor" aria-label="anchor" href="#disclaimer"></a>
 </h2>
 <p>The United States Department of Commerce (DOC) GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. DOC has relinquished control of the information and no longer has responsibility to protect the integrity, confidentiality, or availability of the information. Any claims against the Department of Commerce stemming from the use of its GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.”</p>
 <hr>
-<p><img src="https://raw.githubusercontent.com/nmfs-general-modeling-tools/nmfspalette/main/reference/figures/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries"></p>
+<p><img src="https://raw.githubusercontent.com/nmfs-general-modeling-tools/nmfspalette/main/man/figures/noaa-fisheries-rgb-2line-horizontal-small.png" width="200" style="height: 75px !important;" alt="NOAA Fisheries"></p>
 <p><a href="https://www.commerce.gov/" class="external-link">U.S. Department of Commerce</a> | <a href="https://www.noaa.gov" class="external-link">National Oceanographic and Atmospheric Administration</a> | <a href="https://www.fisheries.noaa.gov/" class="external-link">NOAA Fisheries</a></p>
 </div>
 </div>
@@ -298,7 +294,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
